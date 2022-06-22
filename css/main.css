@@ -87,6 +87,205 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+/*-- BASE STYLES --*/
+
+html {}
+
+body {}
+
+header, 
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+/*-- HEADER STYLES --*/
+
+header .content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+header a {}
+
+header img {}
+
+.header-divider {}
+
+header nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header nav ul li {}
+
+/*-- FOOTER STYLES --*/
+
+footer .content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer p {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer h4 {}
+
+.footer-content {}
+
+footer .contact {}
+
+footer address {}
+
+footer .social {}
+
+footer .social-icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer a {}
+
+footer .copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*-- MOBILE STYLES - HOMEPAGE --*/
+
+main .content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+main h1 {}
+
+main h2 {}
+
+main h3 {}
+
+main p {}
+
+.hero-area {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+aside {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+aside .content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+aside .form-description {}
+
+aside .form {}
+
+input {}
+
+.features {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.features-items {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.fontawesome-icon {}
+
+.features-items-description {}
+
+.reviews {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.reviews img {}
+
+/*-- MOBILE STYLES - ABOUT PAGE --*/
+
+.mission {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.mission-content {}
+
+.map {}
+
+figure {}
+
+.contact-section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.contact-col-one {}
+
+.contact-col-two {}
+
+.contact-section address {}
+
+
+/*-- MOBILE STYLES - FAQ PAGE --*/
+
+.faq {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.faq .content-wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.question {}
+
+
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
