@@ -89,10 +89,10 @@ textarea {
 
 /*-- BASE STYLES --*/
 
-html {}
-
-body {}
-
+.content-wrapper {
+  width: 90%;
+  margin: 50px 0;
+}
 header, 
 footer {
   display: flex;
@@ -103,6 +103,10 @@ footer {
 
 /*-- HEADER STYLES --*/
 
+header {
+  padding: 15px 0;
+}
+
 header .content-wrapper {
   display: flex;
   justify-content: center;
@@ -111,16 +115,10 @@ header .content-wrapper {
   margin: 0;
 }
 
-header {
-  padding: 15px 0;
-}
-
-header a {}
-
-header img {}
-
 .header-divider {
   width: 100%;
+  height: 1px;
+  margin: 10px 0 20px 0;
 }
 
 header nav {
@@ -133,42 +131,28 @@ header nav {
 
 header nav ul {
   display: flex;
-  align-items: center;
-  width: 54%;
-  list-style: none;
-  padding: 0px;
-}
-
-header nav ul li {
-  padding: 0px 15px 0px 0px;
+  justify-content: space-around;
+  width: 100%;
 }
 
 /*-- FOOTER STYLES --*/
 
+footer {
+  flex-direction: column;
+}
+
+footer p {
+  margin: 0;
+}
+
 footer .content-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 55%;
   margin: 50px 0;
 }
 
-footer p {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin: 0;
+footer .contact {
+  margin-bottom: 50px;
 }
-
-footer h4 {}
-
-.footer-content {}
-
-footer .contact {}
-
-footer address {}
-
-footer .social {}
 
 footer .social-icons {
   display: flex;
@@ -176,37 +160,27 @@ footer .social-icons {
   align-items: center;
 }
 
-footer a {}
-
-footer .copyright {
+footer .social-icons p {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+footer .copyright {
+  margin: 20px 0;
 }
 
 /*-- MOBILE STYLES - HOMEPAGE --*/
 
-.content-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
-  width: 80%;
-}
-
-main h1 {}
-
-main h2 {}
-
-main h3 {}
-
-main p {}
+/* HERO AREA */
 
 .hero-area {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: center;
+  flex-flow: row wrap;
 }
+
+/* ASIDE */
 
 aside {
   display: flex;
@@ -215,102 +189,95 @@ aside {
   flex-flow: row wrap;
 }
 
-aside .form-description {}
-
-aside .form {}
-
-input {
-  margin: 18px 0px;
-}
+/* FEATURES */
 
 .features {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.features p {
-  margin: 0;
-  padding: 5px 0px;
-  text-align: center;
-}
-
-.features article {
-  width: 67%;
-}
-
-.features-items {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: center;
   flex-flow: row wrap;
 }
 
-.fontawesome-icon {}
+.features h2 {
+  margin-bottom: 60px;
+}
 
-.features-items-description {}
+.features article {
+  width: 63%;
+  margin: 30px 0;
+}
+
+.features .features-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+.features p {
+  margin: 0;
+}
+
+/* REVIEWS */
 
 .reviews {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+.reviews h2 {
+  margin-bottom: 40px;
+}
+
+.reviews h3 {
+  width: 55%;
+  margin: 20px 0;
+}
+
+
+/*-- MOBILE STYLES - ABOUT PAGE --*/
+
+.mission {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
 }
 
-.reviews img {}
-
-.reviews h3 {
-  width: 58%;
-}
-
-/*-- MOBILE STYLES - ABOUT PAGE --*/
-
-.mission {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-flow: row wrap;
-}
-
-.mission-content {}
-
-.map {}
-
-figure {}
-
 .contact-section {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   flex-flow: row wrap;
 }
 
-.contact-col-one {}
-
-.contact-col-two {}
-
-.contact-section address {}
-
+.contact-content p {
+  margin: 0;
+}
 
 /*-- MOBILE STYLES - FAQ PAGE --*/
 
 .faq {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   flex-flow: row wrap;
 }
 
 .faq .content-wrapper {
+  margin: 50px 0 0 0;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   flex-flow: row wrap;
 }
 
-.question {}
+.faq h2 {
+  margin-bottom: 40px;
+}
 
-
+.faq-content {
+  margin-bottom: 50px;
+}
 
 /* ==========================================================================
    Helper classes
@@ -400,16 +367,151 @@ figure {}
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+   @media only screen and (min-width: 768px) {
+   /*Tablet styles here*/
+   
+   /* ==== TABLET - BASE STYLES AND HOMEPAGE ==== */
+   .content-wrapper {
+    max-width: 640px;
+    margin: 100px 0;
+   }
+   
+   header {
+    justify-content: space-around;
+    padding: 33px 0;
+   }
+
+   header .content-wrapper {
+    width: 100%;
+    justify-content: space-between;
+   }
+
+   header nav {
+    width: 20%;
+   }
+
+   header nav ul {
+    justify-content: space-between;
+   }
+
+   .header-divider {
+    display: none;
+   }
+
+  /* HERO AREA */
+
+  /* ASIDE */
+    
+    aside .content-wrapper {
+      margin: 50px 0;
+      display: flex;
+      justify-content: space-between;
+      flex-flow: row wrap;
+    }
+
+    aside .content-wrapper .form-description, 
+    aside .content-wrapper .form {
+      width: 40%;
+      margin: 0;
+    }
+    
+    /* FEATURES */
+
+    .features article {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-flow: column wrap;
+      flex-basis: 50%;
+    }
+
+    .features .features-items-description {
+      width: 50%;
+    }
+
+    /* REVIEWS */
+
+    .reviews article {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .reviews article div {
+      width: 49%;
+    }
+
+    .reviews .content-wrapper {
+      justify-content: flex-start;
+    }
+
+    /* FOOTER */
+
+    footer .content-wrapper {
+      width: 65%;
+      margin: 100px 0;
+    }
+
+    .footer-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    footer .contact {
+      margin-bottom: 0;
+    }
+
+  /* this was in the solution code but it makes my footer
+  act weird and align flush left so i'm commenting it out 
+  for now 
+        footer .copyright {
+          width: 100%;
+        }
+  -------------------------------------------------------------- */
+
+  /* ==== TABLET - ABOUT PAGE ==== */
+
+  .mission-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
 }
 
-@media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
+.mission-content p {
+    width: 45%;
 }
+
+.contact-section .content-wrapper h2 {
+    width: 80%;
+}
+
+.contact-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+  /* ==== TABLET - FAQ PAGE ==== */
+
+  .faq .content-wrapper {
+    justify-content: space-between;
+}
+
+.faq-content {
+    flex-basis: 45%;
+}
+
+.faq h2 {
+    width: 100%;
+}
+   }
+    
+   @media only screen and (min-width: 1200px) {
+   /*Desktop styles here*/
+
+
+   }
 
 /* ==========================================================================
    Print styles.
