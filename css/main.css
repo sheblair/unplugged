@@ -108,28 +108,40 @@ header .content-wrapper {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  margin: 0;
+}
+
+header {
+  padding: 15px 0;
 }
 
 header a {}
 
 header img {}
 
-.header-divider {}
+.header-divider {
+  width: 100%;
+}
 
 header nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-flow: row wrap;
+  width: 60%;
 }
 
 header nav ul {
   display: flex;
-  justify-content: center;
   align-items: center;
+  width: 54%;
+  list-style: none;
+  padding: 0px;
 }
 
-header nav ul li {}
+header nav ul li {
+  padding: 0px 15px 0px 0px;
+}
 
 /*-- FOOTER STYLES --*/
 
@@ -137,12 +149,15 @@ footer .content-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 55%;
+  margin: 50px 0;
 }
 
 footer p {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  margin: 0;
 }
 
 footer h4 {}
@@ -171,11 +186,12 @@ footer .copyright {
 
 /*-- MOBILE STYLES - HOMEPAGE --*/
 
-main .content-wrapper {
+.content-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  width: 80%;
 }
 
 main h1 {}
@@ -199,22 +215,28 @@ aside {
   flex-flow: row wrap;
 }
 
-aside .content-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 aside .form-description {}
 
 aside .form {}
 
-input {}
+input {
+  margin: 18px 0px;
+}
 
 .features {
   display: flex;
   justify-content: space-around;
   align-items: center;
+}
+
+.features p {
+  margin: 0;
+  padding: 5px 0px;
+  text-align: center;
+}
+
+.features article {
+  width: 67%;
 }
 
 .features-items {
@@ -236,6 +258,10 @@ input {}
 }
 
 .reviews img {}
+
+.reviews h3 {
+  width: 58%;
+}
 
 /*-- MOBILE STYLES - ABOUT PAGE --*/
 
