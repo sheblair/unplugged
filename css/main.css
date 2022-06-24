@@ -203,6 +203,8 @@ header nav ul {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  background: url('../img/jake-melara-30679-unsplash.jpg') center no-repeat;
+  background-size: cover;
 }
 
 /* ASIDE */
