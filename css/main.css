@@ -97,6 +97,7 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-size: 1em;
   text-align: left;
+  color: #e2e3ed;
 }
 
 ul,
@@ -109,9 +110,16 @@ a {
   text-decoration: none;
 }
 
+h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.25em;
+  font-weight: 500;
+}
+
 h2 {
   font-family: 'Poppins', sans-serif;
   font-size: 1.875em;
+  font-weight: 500;
 }
 
 h3,
@@ -119,15 +127,19 @@ h4 {
   font-family: 'Poppins', sans-serif;
   margin: 20px 0;
   font-size: 1.125em;
+  font-weight: 500;
+  margin: 0 0 10px 0;
 }
 
 p {
   font-size: .875em;
   line-height: 1.285em;
+  margin: 5px 0px;
 }
 
 address {
   font-style: normal;
+  text-align: center;
 }
 
 .content-wrapper {
@@ -135,7 +147,7 @@ address {
   margin: 50px 0;
 }
 
-/*-- HEADER AND FOOTER STYLES --*/
+/*-- HEADER STYLES --*/
 
 header, 
 footer {
@@ -143,6 +155,7 @@ footer {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background-color: #202322;
 }
 
 header {
@@ -161,6 +174,7 @@ header .content-wrapper {
   width: 100%;
   height: 1px;
   margin: 10px 0 20px 0;
+  background-color: #3a3a3a;
 }
 
 header nav {
@@ -175,39 +189,10 @@ header nav ul {
   display: flex;
   justify-content: space-around;
   width: 100%;
-}
-
-footer {
-  flex-direction: column;
-}
-
-footer p {
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 0;
   margin: 0;
-}
-
-footer .content-wrapper {
-  width: 55%;
-  margin: 50px 0;
-}
-
-footer .contact {
-  margin-bottom: 50px;
-}
-
-footer .social-icons {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-footer .social-icons p {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-footer .copyright {
-  margin: 20px 0;
 }
 
 /*-- MOBILE STYLES - HOMEPAGE --*/
@@ -227,6 +212,11 @@ aside {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background-color: #527158;
+}
+
+::placeholder {
+  font-style: italic;
 }
 
 /* FEATURES */
@@ -254,6 +244,7 @@ aside {
 }
 .features p {
   margin: 0;
+  text-align: center;
 }
 
 /* REVIEWS */
@@ -262,6 +253,7 @@ aside {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  background-color: #2a423a;
 }
 
 .reviews h2 {
@@ -273,6 +265,45 @@ aside {
   margin: 20px 0;
 }
 
+/*-- FOOTER STYLES --*/
+
+footer {
+  flex-direction: column;
+  color: #fff;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer h4 {
+  text-align: center;
+}
+
+footer .content-wrapper {
+  width: 55%;
+  margin: 50px 0;
+}
+
+footer .contact {
+  margin-bottom: 50px;
+}
+
+footer .social-icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer .social-icons p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .copyright {
+  margin: 20px 0;
+}
 
 /*-- MOBILE STYLES - ABOUT PAGE --*/
 
@@ -281,6 +312,7 @@ aside {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background-color: #527158;
 }
 
 .contact-section {
@@ -288,10 +320,17 @@ aside {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background-color: #2a423a;
 }
 
 .contact-content p {
   margin: 0;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.contact-content h4 {
+  text-align: left;
 }
 
 /*-- MOBILE STYLES - FAQ PAGE --*/
@@ -301,6 +340,7 @@ aside {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background-color: #527158;
 }
 
 .faq .content-wrapper {
@@ -315,8 +355,40 @@ aside {
   margin-bottom: 40px;
 }
 
+.faq h4 {
+  font-weight: 500;
+}
+
 .faq-content {
   margin-bottom: 50px;
+}
+
+/*-- MOBILE STYLES - FORM SUBMISSION --*/
+
+aside .form {
+  margin-top: 30px;
+}
+ 
+input[type=text] {
+  box-sizing: border-box;
+  width: 100%;
+  color: #2a423a;
+  font-style: italic;
+  padding: 1em;
+}
+ 
+input[type=button] {
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 20px;
+  background-color: #2a423a;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.125em;
+  color: #e2e3ed;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 /* ==========================================================================
@@ -469,6 +541,10 @@ aside {
       width: 50%;
     }
 
+    .features p {
+      width: 60%;
+    }
+
     /* REVIEWS */
 
     .reviews article {
@@ -586,7 +662,7 @@ aside {
     /*REVIEWS*/
 
     .reviews article div {
-      width: 42%;
+      width: 50%;
     }
 
     /* ==== DESKTOP - ABOUT PAGE ==== */
