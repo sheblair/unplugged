@@ -147,6 +147,14 @@ address {
   margin: 50px 0;
 }
 
+img {
+  width: 100%;
+}
+
+figure {
+  margin: 0;
+}
+
 /*-- HEADER STYLES --*/
 
 header, 
@@ -195,6 +203,14 @@ header nav ul {
   margin: 0;
 }
 
+header figure {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
 /*-- MOBILE STYLES - HOMEPAGE --*/
 
 /* HERO AREA */
@@ -203,8 +219,12 @@ header nav ul {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
-  background: url('../img/jake-melara-30679-unsplash.jpg') center no-repeat;
+  background: url('../img/jake-melara-30679-unsplash.jpg') center no-repeat #333;
   background-size: cover;
+}
+
+.hero-area h1 {
+  margin: 0 0 300px 0;
 }
 
 /* ASIDE */
@@ -227,6 +247,8 @@ aside {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  background: url('../img/rawpixel-800820-unsplash1.jpg') center no-repeat;
+  background-size: cover;
 }
 
 .features h2 {
@@ -490,6 +512,10 @@ input[type=button] {
     margin: 100px 0;
    }
    
+   header img {
+    width: 55%;
+   }
+
    header {
     justify-content: space-around;
     padding: 33px 0;
@@ -513,6 +539,10 @@ input[type=button] {
    }
 
   /* HERO AREA */
+
+  .hero-area h1 {
+    width: 80%;
+  }
 
   /* ASIDE */
     
@@ -552,6 +582,7 @@ input[type=button] {
     .reviews article {
       display: flex;
       justify-content: space-between;
+      align-items: flex-end;
     }
 
     .reviews article div {
@@ -560,6 +591,14 @@ input[type=button] {
 
     .reviews .content-wrapper {
       justify-content: flex-start;
+    }
+
+    .reviews figure {
+      width: 48%;
+    }
+
+    .reviews p {
+      margin: 0;
     }
 
     /* FOOTER */
@@ -634,6 +673,10 @@ input[type=button] {
       max-width: 960px;
     }
 
+    header img {
+      width: 50%;
+    }
+
     /* HERO AREA */
 
     .hero-area h1 {
@@ -665,6 +708,11 @@ input[type=button] {
 
     .reviews article div {
       width: 50%;
+    }
+
+    .reviews article {
+      display: flex;
+      align-items: flex-start;
     }
 
     /* ==== DESKTOP - ABOUT PAGE ==== */
