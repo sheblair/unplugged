@@ -328,6 +328,14 @@ footer .social-icons p {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #527158;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+
+footer .social-icons p i {
+  font-size: 1.3125em;
 }
 
 footer .copyright {
@@ -637,6 +645,10 @@ input[type=button] {
 
     footer .contact {
       margin-bottom: 0;
+    }
+
+    footer .social-icons p {
+      margin: 0px 20px;
     }
 
   /* this was in the solution code but it makes my footer
